@@ -65,7 +65,7 @@ public class Card {
 
 	/** Compare this card with the argument.
 	 * @param otherCard the other card to compare to this
-	 * @return true if the rank, getS and point value of this card
+	 * @return true if the rank, suit, and point value of this card
 	 *              are equal to those of the argument;
 	 *         false otherwise.
 	 */
