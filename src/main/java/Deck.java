@@ -43,6 +43,7 @@ public class Deck {
 
 	// Shuffles the deck by repeatedly randomly swapping pairs of cards
 	// This method should change the order of the cards in cardsList
+	// Shuffling should also reset the size variable to its original value
 	public void shuffle() {
 		// YOUR CODE HERE
 	}
