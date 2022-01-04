@@ -49,8 +49,8 @@ public class MyTests {
         int[] values = {11, 12, 13, 14};
         Deck d1 = new Deck(ranks, suits, values);
 
-        Card c1 = new Card("ace", "hearts", 1);
-        Card c2 = new Card("king", "hearts", 2);
+        Card c1 = new Card("ace", "hearts", 14);
+        Card c2 = new Card("king", "hearts", 13);
 
 
         assertEquals(c1, d1.deal(), "The 1st card to be dealt should be: ace of hearts");
