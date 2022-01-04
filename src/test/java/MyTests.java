@@ -42,6 +42,29 @@ public class MyTests {
     }
 
     @Test
+    public void testDeal() {
+        // Make a small deck
+        String[] ranks = {"jack", "queen", "king", "ace"};
+        String[] suits = {"spades", "hearts"};
+        int[] values = {11, 12, 13, 14};
+        Deck d1 = new Deck(ranks, suits, values);
+
+        Card c1 = new Card("ace", "hearts", 1);
+        Card c2 = new Card("king", "hearts", 2);
+
+
+        assertEquals(c1, d1.deal(), "The 1st card to be dealt should be: ace of hearts");
+        assertEquals(c2, d1.deal(), "The 2nd card to be dealt should be: king of hearts");
+        d1.deal();
+        d1.deal();
+        d1.deal();
+        d1.deal();
+        d1.deal();
+        d1.deal();
+        assertEquals(null, d1.deal(), "When the deck is empty, dealing should return: null");
+    }
+
+    @Test
     public void testSelectionShuffle() {
         String[] ranks = { "ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king" };
         String[] suits = { "spades", "hearts", "diamonds", "clubs" };
