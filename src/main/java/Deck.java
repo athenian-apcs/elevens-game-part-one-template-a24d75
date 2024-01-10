@@ -17,7 +17,8 @@ public class Deck {
 	// You should go through and make all possible pairs of suits and ranks
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		// YOUR CODE HERE
-		// // Remember, in a constructor you need to first create the ArrayList for the instance variable!
+		// Remember, in a constructor you need to first create the ArrayList for the instance variable!
+		// Note: your outer loop must be ranks and your inner loop suits for the tests to pass.
 	}
 	// Deals a card from this deck.
 	// return the card just dealt, or null if all the cards have been dealt already
